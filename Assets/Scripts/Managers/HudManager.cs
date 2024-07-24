@@ -162,7 +162,7 @@ public class HudManager : MonoBehaviour
 
     public void ShowCurrentMusicName(string musicName)
     {
-        /*
+        
         if (!currentMusicMainPanel.gameObject.activeSelf)
             currentMusicMainPanel.gameObject.SetActive(true);
 
@@ -187,7 +187,7 @@ public class HudManager : MonoBehaviour
 
             LeanTween.move(currentMusicIcon, new Vector2(textPanelWidth / 2f, currentMusicIcon.anchoredPosition.y), animSpeed).setEase(EaseAnimType).setIgnoreTimeScale(true);
 
-        }).setIgnoreTimeScale(true);*/
+        }).setIgnoreTimeScale(true);
     }
 
     private IEnumerator HideCurrentMusicNameIE(string currentMusicName)

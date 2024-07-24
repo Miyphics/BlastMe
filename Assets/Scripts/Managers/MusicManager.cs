@@ -64,7 +64,7 @@ public class MusicManager : MonoBehaviour
         musicSource.Stop();
         musicSource.clip = musicQueue[^1];
         musicSource.Play();
-        //GameManager.Instance.HudManager.ShowCurrentMusicName(musicSource.clip.name);
+        GameManager.Instance.HudManager.ShowCurrentMusicName(musicSource.clip.name);
 
         musicQueue.RemoveAt(musicQueue.Count - 1);
     }

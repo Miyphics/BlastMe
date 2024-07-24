@@ -53,9 +53,12 @@ public class BallonsSpawner : MonoBehaviour
     private readonly float minBallonDistanceToSpawn = 1.6f;
     private readonly float maxBombChance = 39f;
     private readonly float minBombChance = 2f;
-    private readonly float bombChanceMultiplier = 0.4f;
-    private readonly float maxTimeToReverse = 40f;
-    private readonly float minTimeToReverse = 20f;
+    private readonly float bombChanceMultiplier = 0.38f;
+    private readonly float maxTimeToReverse = 35f;
+    private readonly float minTimeToReverse = 15f;
+
+    private readonly WaitForSeconds reverseWait = new(0.05f);
+    private readonly WaitForSeconds increaseSpeedWait = new(1.65f);
 
     [SerializeField] private GameObject ballonPrefab;
     [SerializeField] private GameObject bombPrefab;
@@ -72,10 +75,8 @@ public class BallonsSpawner : MonoBehaviour
 
     private float timeToReverse;
     private Coroutine reverseRoutine;
-    private WaitForSeconds reverseWait = new(0.05f);
 
     private Coroutine increaseSpeedCoroutine;
-    private WaitForSeconds increaseSpeedWait = new(2.5f);
 
     private Vector2 spawnPosition;
 

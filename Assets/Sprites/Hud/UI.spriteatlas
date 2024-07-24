@@ -51,12 +51,16 @@ SpriteAtlas:
     - {fileID: 2800000, guid: dfe6d4948f8148744a994d71513bfbb8, type: 3}
     - {fileID: 2800000, guid: 28882499cafed2c41a7650c602af5297, type: 3}
     - {fileID: 2800000, guid: 73730039bd455514a8914d733f2fe155, type: 3}
+    - {fileID: 2800000, guid: d76773c1582e7f64886143ac9fb417fe, type: 3}
+    - {fileID: 2800000, guid: 1df456d23b25fd646b84bba982c0a8c1, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
     packedSpriteRenderDataKeys:
     - 30e94d3109a7208449b0cb10c0cd3f5a: 21300000
+    - d76773c1582e7f64886143ac9fb417fe: 21300000
     - 38b8027271661ba4cb4fb84010e3826d: 21300000
+    - 1df456d23b25fd646b84bba982c0a8c1: 21300000
     - d1e5dc1306257c44a8a0e6cf95b16746: 21300000
     - dfe6d4948f8148744a994d71513bfbb8: 21300000
     - 0a7df926bcc48bc46841127c4a86dfd3: 21300000
@@ -77,7 +81,9 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 30e94d3109a7208449b0cb10c0cd3f5a, type: 3}
+  - {fileID: 21300000, guid: d76773c1582e7f64886143ac9fb417fe, type: 3}
   - {fileID: 21300000, guid: 38b8027271661ba4cb4fb84010e3826d, type: 3}
+  - {fileID: 21300000, guid: 1df456d23b25fd646b84bba982c0a8c1, type: 3}
   - {fileID: 21300000, guid: d1e5dc1306257c44a8a0e6cf95b16746, type: 3}
   - {fileID: 21300000, guid: dfe6d4948f8148744a994d71513bfbb8, type: 3}
   - {fileID: 21300000, guid: 0a7df926bcc48bc46841127c4a86dfd3, type: 3}
@@ -97,7 +103,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 95449b6f0c9091440b76fcf60be3c4b7, type: 3}
   m_PackedSpriteNamesToIndex:
   - Coin
+  - Hand
   - Cart
+  - ClickEffect
   - CoinSmall
   - Trophy
   - MusicIcon

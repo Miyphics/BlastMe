@@ -6,12 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-#if UNITY_WEBGL
     [DllImport("__Internal")]
     private static extern void GetAuthExtern();
     [DllImport("__Internal")]
     private static extern void AuthExtern();
-#endif
 
     public event Action MakeAuth;
 

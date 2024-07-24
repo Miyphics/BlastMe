@@ -20,10 +20,10 @@ public class PlayerManager : MonoBehaviour
     public Camera MainCamera => mainCamera;
 
     [SerializeField] private List<BallonsSpawner> ballonSpawners;
-    public List<BallonsSpawner> BallonsSpawners => ballonSpawners;
+    public IReadOnlyList<BallonsSpawner> BallonsSpawners => ballonSpawners;
     [SerializeField] private BackgroundEffector backgroundEffector;
-    private byte numberOfLines = 2;
-    public byte NumberOfLines => numberOfLines;
+    private int numberOfLines = 2;
+    public int NumberOfLines => numberOfLines;
     public bool CanBallsSpawn { get; private set; }
 
     private sint score;

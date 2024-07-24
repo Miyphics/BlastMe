@@ -125,9 +125,9 @@ public class ScoreData
     public int score;
     public uint coins;
     public string date;
-    public byte numberOfLines;
+    public int numberOfLines;
 
-    public ScoreData(int score, uint coins, string date, byte numberOfLines)
+    public ScoreData(int score, uint coins, string date, int numberOfLines)
     {
         this.score = score;
         this.coins = coins;
@@ -139,13 +139,11 @@ public class ScoreData
 
 public class SaveManager
 {
-#if UNITY_WEBGL
     [DllImport("__Internal")]
     private static extern void SaveGameExtern(string data, bool flush);
 
     [DllImport("__Internal")]
     private static extern void LoadGameExtern();
-#endif
 
     private const string SAVE_NAME = "Save.sav";
     private static readonly string fullSavePath;
@@ -179,7 +177,7 @@ public class SaveManager
         if (data == null)
             return;
 
-        string json = JsonUtility.ToJson(data, true);
+        string json = JsonUtility.ToJson(data);
 
         switch (Application.platform)
         {
