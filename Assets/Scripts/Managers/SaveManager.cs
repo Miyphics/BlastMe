@@ -139,28 +139,39 @@ public class ScoreData
 
 public class SaveManager
 {
+#if UNITY_WEBGL
     [DllImport("__Internal")]
     private static extern void SaveGameExtern(string data, bool flush);
 
     [DllImport("__Internal")]
     private static extern void LoadGameExtern();
+#endif
 
-
-    public static string appPath;
+    private const string SAVE_NAME = "Save.sav";
+    private static readonly string fullSavePath;
+    private static readonly string saveDirectory;
 
     static SaveManager()
     {
-        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+        switch (Application.platform)
         {
-            appPath = Application.persistentDataPath;
+            case RuntimePlatform.WindowsEditor:
+            case RuntimePlatform.LinuxEditor:
+            case RuntimePlatform.OSXEditor:
+                saveDirectory = Path.Combine(Application.dataPath, "Editor", "Saves");
+            break;
+    
+            case RuntimePlatform.IPhonePlayer:
+            case RuntimePlatform.Android:
+                saveDirectory = Path.Combine(Application.persistentDataPath, "Saves");
+                break;
+
+            default:
+                fullSavePath = Path.Combine(Application.dataPath, "Saves");
+                break;
         }
-        else
-        {
-            appPath = Application.platform switch
-            {
-                _ => Application.dataPath,
-            };
-        }
+
+        fullSavePath = Path.Combine(saveDirectory, SAVE_NAME);
     }
 
     public static void SaveData(PlayerData data, bool flush = false)
@@ -180,16 +191,12 @@ public class SaveManager
 
             default:
                 {
-                    var savePath = appPath + "/Data";
-
-                    if (!Directory.Exists(savePath))
-                        Directory.CreateDirectory(savePath);
-
-                    savePath += "/Save.sav";
+                    if (!Directory.Exists(saveDirectory))
+                        Directory.CreateDirectory(saveDirectory);
 
                     json = Encryptor.Encode(json);
 
-                    using StreamWriter stream = new(savePath);
+                    using StreamWriter stream = new(fullSavePath);
                     stream.Write(json);
                 }
                 break;
@@ -208,17 +215,13 @@ public class SaveManager
 
             default:
                 {
-                    var savePath = appPath + "/Data";
-
-                    if (!Directory.Exists(savePath))
+                    if (!Directory.Exists(saveDirectory))
                         return null;
 
-                    savePath += "/Save.sav";
-
-                    if (!File.Exists(savePath))
+                    if (!File.Exists(fullSavePath))
                         return null;
 
-                    using StreamReader stream = new(savePath);
+                    using StreamReader stream = new(fullSavePath);
                     string json = stream.ReadToEnd();
                     json = Encryptor.Decode(json);
 
