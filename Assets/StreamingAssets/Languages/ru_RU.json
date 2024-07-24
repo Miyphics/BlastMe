@@ -1,0 +1,120 @@
+﻿{
+  "items": [
+    {
+      "key": "info.daily",
+      "value": "Вы уже забрали ежедневную награду приходите позже"
+    },
+    {
+      "key": "info.error",
+      "value": "Произошла ошибка повторите попытку позже"
+    },
+    {
+      "key": "Ok",
+      "value": "Ок"
+    },
+    {
+      "key": "Yes",
+      "value": "Да"
+    },
+    {
+      "key": "No",
+      "value": "Нет"
+    },
+    {
+      "key": "info.buySkin",
+      "value": "Вы действительно хотите купить этот скин?"
+    },
+    {
+      "key": "info.doChangeSkin",
+      "value": "Вы действительно хотите сменить скин?"
+    },
+    {
+      "key": "info.resetProgress",
+      "value": "Вы действительно хотите сбросить весь игровой прогресс?"
+    },
+    {
+      "key": "info.leaderboard",
+      "value": "Если вы хотите попасть в таблицу лидеров, войдите в свою учетную запись"
+    },
+    {
+      "key": "Score",
+      "value": "Счет"
+    },
+    {
+      "key": "Play",
+      "value": "Играть"
+    },
+    {
+      "key": "Music",
+      "value": "Музыка"
+    },
+    {
+      "key": "Battery saving",
+      "value": "Экономия батареи"
+    },
+    {
+      "key": "Balls",
+      "value": "Шары"
+    },
+    {
+      "key": "Bombs",
+      "value": "Бомбы"
+    },
+    {
+      "key": "Coins",
+      "value": "Монеты"
+    },
+    {
+      "key": "Bought",
+      "value": "Купленное"
+    },
+    {
+      "key": "1 line",
+      "value": "1 линия"
+    },
+    {
+      "key": "2 lines",
+      "value": "2 линии"
+    },
+    {
+      "key": "3 lines",
+      "value": "3 линии"
+    },
+    {
+      "key": "Game Over",
+      "value": "Конец Игры"
+    },
+    {
+      "key": "line",
+      "value": "линия"
+    },
+    {
+      "key": "lines",
+      "value": "линии"
+    },
+    {
+      "key": "Reset progress",
+      "value": "Сбросить прогресс"
+    },
+    {
+      "key": "Purchased",
+      "value": "Куплено"
+    },
+    {
+      "key": "Selected",
+      "value": "Выбран"
+    },
+	{
+      "key": "Volume",
+      "value": "Громкость"
+    },
+	{
+      "key": "Back to menu",
+      "value": "Назад в меню"
+    },
+	{
+      "key": "info.goToMenu",
+      "value": "Вы уверены? Текущий игровой прогресс не сохранится."
+    }
+  ]
+}

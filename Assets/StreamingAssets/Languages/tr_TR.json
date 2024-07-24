@@ -1,0 +1,120 @@
+﻿{
+  "items": [
+    {
+      "key": "info.daily",
+      "value": "Günlük ödülü zaten topladınız, daha sonra tekrar gelin"
+    },
+    {
+      "key": "info.error",
+      "value": "Bir hata oluştu, lütfen tekrar deneyin"
+    },
+    {
+      "key": "Ok",
+      "value": "Tamam"
+    },
+    {
+      "key": "Yes",
+      "value": "Evet"
+    },
+    {
+      "key": "No",
+      "value": "Numara"
+    },
+    {
+      "key": "info.buySkin",
+      "value": "Bu cildi gerçekten satın almak istiyor musunuz?"
+    },
+    {
+      "key": "info.doChangeSkin",
+      "value": "Cildinizi gerçekten değiştirmek istiyor musunuz?"
+    },
+    {
+      "key": "info.resetProgress",
+      "value": "Tüm oyun ilerlemesini gerçekten sıfırlamak istiyor musunuz?"
+    },
+    {
+      "key": "info.leaderboard",
+      "value": "Skor tablosuna girmek istiyorsanız, hesabınıza giriş yapın"
+    },
+    {
+      "key": "Score",
+      "value": "Puan"
+    },
+    {
+      "key": "Play",
+      "value": "Oyna"
+    },
+    {
+      "key": "Music",
+      "value": "Müzik"
+    },
+    {
+      "key": "Battery saving",
+      "value": "Pil tasarrufu"
+    },
+    {
+      "key": "Balls",
+      "value": "Toplar"
+    },
+    {
+      "key": "Bombs",
+      "value": "Bombalar"
+    },
+    {
+      "key": "Coins",
+      "value": "Madeni paralar"
+    },
+    {
+      "key": "Bought",
+      "value": "Satın almak"
+    },
+    {
+      "key": "1 line",
+      "value": "1 satır"
+    },
+    {
+      "key": "2 lines",
+      "value": "2 satır"
+    },
+    {
+      "key": "3 lines",
+      "value": "3 satır"
+    },
+    {
+      "key": "Game Over",
+      "value": "Oyun Bitti"
+    },
+    {
+      "key": "line",
+      "value": "satir"
+    },
+    {
+      "key": "lines",
+      "value": "satir"
+    },
+    {
+      "key": "Reset progress",
+      "value": "İlerlemeyi sıfırla"
+    },
+    {
+      "key": "Purchased",
+      "value": "Satın alındı"
+    },
+    {
+      "key": "Selected",
+      "value": "Seçildi"
+    },
+	{
+      "key": "Volume",
+      "value": "Ses"
+    },
+	{
+      "key": "Back to menu",
+      "value": "Menüye dön"
+    },
+	{
+      "key": "info.goToMenu",
+      "value": "Emin misin? Mevcut oyun ilerlemesi kaydedilmeyecek."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+﻿{
+  "items": [
+    {
+      "key": "info.daily",
+      "value": ""
+    },
+    {
+      "key": "info.error",
+      "value": ""
+    },
+    {
+      "key": "Ok",
+      "value": ""
+    },
+    {
+      "key": "Yes",
+      "value": ""
+    },
+    {
+      "key": "No",
+      "value": ""
+    },
+    {
+      "key": "info.buySkin",
+      "value": ""
+    },
+    {
+      "key": "info.doChangeSkin",
+      "value": ""
+    },
+    {
+      "key": "info.resetProgress",
+      "value": ""
+    },
+    {
+      "key": "info.leaderboard",
+      "value": ""
+    },
+    {
+      "key": "Score",
+      "value": ""
+    },
+    {
+      "key": "Play",
+      "value": ""
+    },
+    {
+      "key": "Music",
+      "value": ""
+    },
+    {
+      "key": "Battery saving",
+      "value": ""
+    },
+    {
+      "key": "Balls",
+      "value": ""
+    },
+    {
+      "key": "Bombs",
+      "value": ""
+    },
+    {
+      "key": "Coins",
+      "value": ""
+    },
+    {
+      "key": "Bought",
+      "value": ""
+    },
+    {
+      "key": "1 line",
+      "value": ""
+    },
+    {
+      "key": "2 lines",
+      "value": ""
+    },
+    {
+      "key": "3 lines",
+      "value": ""
+    },
+    {
+      "key": "Game Over",
+      "value": ""
+    },
+    {
+      "key": "line",
+      "value": ""
+    },
+    {
+      "key": "lines",
+      "value": ""
+    },
+    {
+      "key": "Reset progress",
+      "value": ""
+    },
+    {
+      "key": "Purchased",
+      "value": ""
+    },
+    {
+      "key": "Selected",
+      "value": ""
+    },
+	{
+      "key": "Volume",
+      "value": ""
+    },
+	{
+      "key": "Back to menu",
+      "value": ""
+    },
+	{
+      "key": "info.goToMenu",
+      "value": ""
+    }
+  ]
+}
